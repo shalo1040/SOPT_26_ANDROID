@@ -1,6 +1,6 @@
 # HW01_ConstraintLayout 심화 학습
 <br><br>
-![result view](/img/seminar1/HW01.PNG)
+![result view](/img/seminar1/HW01.png)
 <br><br>
 ## ConstraintDimentionRatio
 width와 height 값을 직접 조절하지 않고 원하는 비율로 버튼, 이미지뷰 등을 설정할 수 있다. 바로 constraintDimentionRatio에 원하는 비율을 width:height 형태로 입력하면 되는데, 이 때 width 또는 height의 값은 0dp를 주어야한다. 길이 값이 0dp인 의미는 가능한 제한 영역 중에서 가장 넓은 값을 나타내는 match_constraint와 같다. 나는 width에 margin을 주어 원하는 길이로 조절했기에 height 값에 0dp를 입력했고 ImageView를 1:1로 설정하고 싶었기에 비율은 1:1을 입력했다. 해당 코드는 아래와 같다.<br>
