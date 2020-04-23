@@ -11,10 +11,10 @@
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/sopt_logo"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:layout_marginHorizontal="40dp"/>
+        android:layout_marginHorizontal="40dp"
+        android:layout_marginTop="70dp"
+        android:src="@drawable/sopt_logo" />
 
     <EditText
         android:id="@+id/et_email"

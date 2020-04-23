@@ -12,6 +12,7 @@ class SignupActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_signup)
+        supportActionBar?.hide()
 
         btn_signUp.setOnClickListener {
             if(et_signUp_email.text.isNullOrBlank() || et_signUp_passwd.text.isNullOrBlank() || et_signUp_passwd2.text.isNullOrBlank() || et_github.text.isNullOrBlank())

@@ -14,6 +14,7 @@ class LoginActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+        supportActionBar?.hide()
 
         btn_signIn.setOnClickListener {
             if(et_email.text.isNullOrBlank() || et_passwd.text.isNullOrBlank())
