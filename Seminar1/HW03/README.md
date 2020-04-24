@@ -1,8 +1,8 @@
 <h1>HW03_ConstraintLayout, RelativeLayout, LinearLayout로<br> 로그인 화면 만들기</h1>
 
 ### 로그인 화면
-<img href="/img/seminar1/login.png" alt="login" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<img href="/img/seminar1/wireframe.PNG" alt="wireframe" width="350"><br><br>
+<img src="/img/seminar1/login.png" alt="login" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="/img/seminar1/wireframe.PNG" alt="wireframe" width="350"><br><br>
 
 ## ConstraintLayout
 이 레이아웃에서 UI를 배치할 때 상하좌우의 constraint를 설정해 그 위치에 제약을 주는 방식으로 만든다. 가로로 중앙에 배치하고 싶다면 좌우의 constraintStart과 constraintEnd를 화면의 양 끝으로 맞추면 되고 반대로 세로로 중앙에 배치하고 싶다면 위아래의 constraintTop과 constraintBottom을 화면 위 아래 끝으로 맞춰주면 된다.
