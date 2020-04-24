@@ -10,10 +10,5 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.login_relative_layout)
-
-        login_btn.setOnClickListener {
-            if(et_email.text.isNullOrBlank() || et_passwd.text.isNullOrBlank()){}
-
-        }
     }
 }
