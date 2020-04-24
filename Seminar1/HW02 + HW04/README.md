@@ -1,10 +1,7 @@
-<h1 display="inline">HW02_회원가입 및 로그인 기능 구현하기</h1>&nbsp;
-
-[바로가기](#HW02)<br>
-<h1 display="inline">HW04_자동 로그인 구현하기</h1>&nbsp;
-
-[바로가기](#HW04)<br>
-
+# HW02_회원가입 및 로그인 기능 구현하기
+# HW04_자동 로그인 구현하기
+[HW02 바로가기](#HW02)<br>
+[HW04 바로가기](#HW04)<br>
 ## HW02
 ### 로그인 화면과 회원가입 화면
 <img src="/img/seminar1/login.png" alt="result view01" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -101,7 +98,7 @@ val password = sharedPref.getString("PASSWORD", "null")
 Toast.makeText(this, "아이디: ${email}\n비밀번호: ${password}", Toast.LENGTH_SHORT).show()
 ```
 <br>
-MainActivity가 실행되면 사용자가 로그인에 성공했다는 의미이므로 SharedPreferences에 LOGIN이라는 파일을 만들어 isLoginUser의 값이 true로 설정했다. 사용자가 로그아웃을 하기 전까지는 이 값이 true임을 유지할 것이므로 앱을 종료시키고 다시 실행할 때 isLoginUser의 값이 true라면 다시 로그인을 하지 않고 곧바로 메인 화면으로 전환할 수 있을 것이다.
+MainActivity가 실행되면 사용자가 로그인에 성공했다는 의미이므로 SharedPreferences에 LOGIN이라는 파일을 만들어 isLoginUser의 값이 true로 설정했다. 사용자가 로그아웃을 하기 전까지는 이 값이 true임을 유지할 것이므로 앱을 종료시키고 다시 실행할 때 isLoginUser의 값이 true라면 다시 로그인을 하지 않고 곧바로 메인 화면으로 전환할 수 있을 것이다.<br>
 
 ```kotlin
 //사용자가 로그인 했음을 저장
@@ -111,7 +108,7 @@ editor.putBoolean("isLoginUser", true)
 editor.apply()
 ```
 <br>
-아래는 로그인 화면의 onCreate()에 구현한 코드이다. MainActivity에서 사용자가 이미 로그인한 유저인지 판별하는 isLoginUser의 값을 true로 설정했기 때문에 isLoginUser를 getBoolean()하면 true 값을 반환할 것이므로 곧바로 MainActivity를 실행할 것이다.
+아래는 로그인 화면의 onCreate()에 구현한 코드이다. MainActivity에서 사용자가 이미 로그인한 유저인지 판별하는 isLoginUser의 값을 true로 설정했기 때문에 isLoginUser를 getBoolean()하면 true 값을 반환할 것이므로 곧바로 MainActivity를 실행할 것이다.<br><br>
 
 ```kotlin
 //로그인 유무 판단
