@@ -1,7 +1,7 @@
 <h1>HW03_ConstraintLayout, RelativeLayout, LinearLayout로<br> 로그인 화면 만들기</h1>
 
 ### 로그인 화면
-<img src="/img/seminar1/login.png" alt="login" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<img src="/img/seminar1/login_sample.PNG" alt="login" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/img/seminar1/wireframe.PNG" alt="wireframe" width="350"><br><br>
 
 ## ConstraintLayout
