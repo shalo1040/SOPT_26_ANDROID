@@ -1,8 +1,9 @@
-# HW02_회원가입 및 로그인 기능 구현하기
-# HW04_자동 로그인 구현하기
-[HW02 바로가기](#HW02)<br>
-[HW04 바로가기](#HW04)<br>
-## HW02
+# Index
+<a href="#HW02">HW02_회원가입 및 로그인 기능 구현하기</a><br>
+<a href="#HW04">HW04_자동 로그인 구현하기</a><br><br>
+
+<h1 id="HW02">HW02_회원가입 및 로그인 기능 구현하기</h1>
+
 ### 로그인 화면과 회원가입 화면
 <img src="/img/seminar1/login.png" alt="result view01" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/img/seminar1/signup.png" alt="result view02" width="350"><br><br>
@@ -22,7 +23,7 @@ fun signUp(view: View) {
 }
 ```
 <br>
-이 때 B에서 A로 전달할 intent에 putExtra()를 호출해 전달하고자 하는 값을 보낼 수 있다. putExtra()의 첫 번째 매개변수에는 값을 가리키는 이름, 두 번째 매개변수에는 값을 넣어준다. 그 다음 setResult()로 전송할 값을 담은 intent를 담고 finish()를 호출할 때 이전 화면으로 돌아간다.
+이 때 B에서 A로 전달할 intent에 putExtra()를 호출해 전달하고자 하는 값을 보낼 수 있다. putExtra()의 첫 번째 매개변수에는 값을 가리키는 이름, 두 번째 매개변수에는 값을 넣어준다. 그 다음 setResult()로 전송할 값을 담은 intent를 담고 finish()를 호출할 때 이전 화면으로 돌아간다.<br><br>
 
 ```kotlin
 val intent = Intent()
@@ -35,7 +36,7 @@ setResult(Activity.RESULT_OK, intent)
 finish()
 ```
 <br>
-이렇게 결과값을 받은 A는 onActivityResult()를 실행하는데, 이 함수를 오버라이드하여 원하는 동작을 구현한다. B에서 putExtra()로 넣은 값들은 getStringExtra()로 받아올 수 있고 이 때 매개변수에는 putExtra()에서 지정해줬던 값을 담은 이름(첫 번째 매개변수)을 적어 어떤 값을 받아올 것인지 지정해준다. 값의 자료형에 따라 getIntExtra(), getLongExtra() 등을 실행할 수 있다.
+이렇게 결과값을 받은 A는 onActivityResult()를 실행하는데, 이 함수를 오버라이드하여 원하는 동작을 구현한다. B에서 putExtra()로 넣은 값들은 getStringExtra()로 받아올 수 있고 이 때 매개변수에는 putExtra()에서 지정해줬던 값을 담은 이름(첫 번째 매개변수)을 적어 어떤 값을 받아올 것인지 지정해준다. 값의 자료형에 따라 getIntExtra(), getLongExtra() 등을 실행할 수 있다.<br><br>
 
 ```kotlin
 override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -54,7 +55,8 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 
 <hr>
 
-## HW04
+<h1 id="HW04">HW04_자동 로그인 구현하기</h1>
+
 ### 메인 화면
 <img src="/img/seminar1/login_success.png" alt="result view03" width="350"><br><br>
 ### HW04 Demo
@@ -88,7 +90,7 @@ override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) 
 }
 ```
 <br>
-이전 코드에서 MainActivity을 실행하면 SharedPreferences로 USER_INFO 파일에 저장한 EMAIL과 PASSWORD값을 getString()으로 받아온다. 첫 번째 매개변수에는 가져오고 싶은 데이터의 key 값을, 두 번째 매개변수에는 default 값을 넣어준다. 성공적으로 데이터를 받아오면 토스트 메시지에 해당 값이 출력되는 것을 볼 수 있다.
+이전 코드에서 MainActivity을 실행하면 SharedPreferences로 USER_INFO 파일에 저장한 EMAIL과 PASSWORD값을 getString()으로 받아온다. 첫 번째 매개변수에는 가져오고 싶은 데이터의 key 값을, 두 번째 매개변수에는 default 값을 넣어준다. 성공적으로 데이터를 받아오면 토스트 메시지에 해당 값이 출력되는 것을 볼 수 있다.<br><br>
 
 ```kotlin
 //사용자 아이디와 비밀번호 토스트 메시지로 출력
@@ -98,7 +100,7 @@ val password = sharedPref.getString("PASSWORD", "null")
 Toast.makeText(this, "아이디: ${email}\n비밀번호: ${password}", Toast.LENGTH_SHORT).show()
 ```
 <br>
-MainActivity가 실행되면 사용자가 로그인에 성공했다는 의미이므로 SharedPreferences에 LOGIN이라는 파일을 만들어 isLoginUser의 값이 true로 설정했다. 사용자가 로그아웃을 하기 전까지는 이 값이 true임을 유지할 것이므로 앱을 종료시키고 다시 실행할 때 isLoginUser의 값이 true라면 다시 로그인을 하지 않고 곧바로 메인 화면으로 전환할 수 있을 것이다.<br>
+MainActivity가 실행되면 사용자가 로그인에 성공했다는 의미이므로 SharedPreferences에 LOGIN이라는 파일을 만들어 isLoginUser의 값이 true로 설정했다. 사용자가 로그아웃을 하기 전까지는 이 값이 true임을 유지할 것이므로 앱을 종료시키고 다시 실행할 때 isLoginUser의 값이 true라면 다시 로그인을 하지 않고 곧바로 메인 화면으로 전환할 수 있을 것이다.<br><br>
 
 ```kotlin
 //사용자가 로그인 했음을 저장
