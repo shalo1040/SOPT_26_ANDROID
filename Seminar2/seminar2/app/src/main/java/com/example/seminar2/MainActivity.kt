@@ -12,7 +12,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         main_viewPager.adapter = MainPagerAdapter(supportFragmentManager)
-        main_viewPager.offscreenPageLimit = 2
+        main_viewPager.offscreenPageLimit = 1
         main_viewPager.addOnPageChangeListener(object: ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(state: Int) { }
 

@@ -19,5 +19,4 @@ class InstaAdapter(private val context: Context) : RecyclerView.Adapter<InstaVie
     override fun onBindViewHolder(holder: InstaViewHolder, position: Int) {
         holder.bind(data[position])
     }
-
 }
