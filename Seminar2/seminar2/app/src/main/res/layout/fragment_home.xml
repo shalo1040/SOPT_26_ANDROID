@@ -12,6 +12,8 @@
         android:layout_height="wrap_content"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
+        android:paddingVertical="10dp"
+        android:clipToPadding="false"
         tools:listitem="@layout/item_insta"/>
 
 </FrameLayout>

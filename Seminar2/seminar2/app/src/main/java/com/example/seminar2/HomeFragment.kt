@@ -1,10 +1,16 @@
 package com.example.seminar2
 
+import android.graphics.drawable.Drawable
+import android.icu.lang.UCharacter
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.content.ContextCompat
+import androidx.recyclerview.widget.DividerItemDecoration
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -12,19 +18,27 @@ import kotlinx.android.synthetic.main.fragment_home.*
  */
 class HomeFragment : Fragment() {
     lateinit var instaAdapter: InstaAdapter
-    val data = mutableListOf<InstaData>()
+    val data = mutableListOf<InstaData>()       //원하는 값을 넣을 배열
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
+
         return inflater.inflate(R.layout.fragment_home, container, false)
     }
 
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {       //onCreateView() 바로 다음에 실행
         super.onViewCreated(view, savedInstanceState)
-        instaAdapter = InstaAdapter(view.context)
-        rv_home.adapter = instaAdapter
+
+        rv_home.addItemDecoration(SpacesItemDecoration(50));
+
+        //구분선
+        val dividerItemDecoration = DividerItemDecoration(view.context, 1);
+        rv_home.addItemDecoration(dividerItemDecoration);
+
+        instaAdapter = InstaAdapter(view.context)       //액티비티의 context
+        rv_home.adapter = instaAdapter              //xml에 내가 만든 어뎁터 연결
         loadData()  //데이터를 임의로 생성하고 어댑터에 전달
     }
 
