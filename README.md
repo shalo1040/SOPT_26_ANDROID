@@ -6,5 +6,5 @@
 * [과제4: 자동 로그인 구현하기](https://github.com/shalo1040/sopt_android/tree/master/Seminar1/HW02%20%2B%20HW04#HW04)
 
 ### Second Seminar (20200425)
-* [과제1: BottomNavigationView, ViewPager, RecyclerView 실습](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/seminar2#contents)
-* [과제2: itemDecoration, clipToPadding 적용하기](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/seminar2#hw02)
+* [과제1: BottomNavigationView, ViewPager, RecyclerView 실습](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW01%20%2B%20HW02#contents)
+* [과제2: itemDecoration, clipToPadding 적용하기](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW01%20%2B%20HW02#hw02)

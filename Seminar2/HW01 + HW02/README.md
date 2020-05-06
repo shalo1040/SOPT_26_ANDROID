@@ -240,7 +240,7 @@ override fun onViewCreated(view: View, savedInstanceState: Bundle?) {       //on
 
 ### clipToPadding
 리사이클러뷰의 top과 bottom에 padding을 주어 화면의 끝에서 조금 떨어지게했다. 하지만 padding만 주고 실행하면 아래의 왼쪽의 실행화면처럼 padding이 주어진 부분은 스크롤되지 않는 것을 볼 수 있다. padding된 부분도 스크롤되게 하기 위해서는 clipToPadding="false"를 해주어야한다. 눈에 잘 보이게 하기 위해 padding 값을 50dp만큼 주었다.
-<img src="/img/seminar2/padding.gif" alt="result padding" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+<br><img src="/img/seminar2/padding.gif" alt="result padding" width="350">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <img src="/img/seminar2/clipToPadding.gif" alt="result clipToPadding" width="350">
 <br><br>
 ```xml
