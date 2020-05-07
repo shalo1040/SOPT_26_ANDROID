@@ -13,8 +13,8 @@ class WebtoonViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val tv_author = itemView.findViewById<TextView>(R.id.tv_author)
 
     fun bindData(data: WebtoonData) {
-        tv_title.text = data.title
         Glide.with(itemView).load(data.image).into(img_main)
+        tv_title.text = data.title
         tv_score.text = data.score
         tv_author.text = data.author
     }
