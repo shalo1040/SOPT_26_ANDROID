@@ -8,3 +8,4 @@
 ### Second Seminar (20200425)
 * [과제1: BottomNavigationView, ViewPager, RecyclerView 실습](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW01%20%2B%20HW02#contents)
 * [과제2: itemDecoration, clipToPadding 적용하기](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW01%20%2B%20HW02#hw02)
+* [과제3: GridLayoutManager로 RecyclerView 만들기](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW03/#HW03)
