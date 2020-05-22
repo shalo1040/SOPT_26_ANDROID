@@ -7,9 +7,9 @@
 <img src="/img/seminar3/demo.gif" alt="hw02 demo" width="350"><br><br>
 
 ### Structure
-![01](/img/seminar3/structure01.PNG)
-![02](/img/seminar3/structure02.PNG)
-![03](/img/seminar3/structure03.PNG)
+![01](/img/seminar3/structure01.PNG)<!-- 
+ -->![02](/img/seminar3/structure02.PNG)<!-- 
+ -->![03](/img/seminar3/structure03.PNG)
 
 <br><br>
 이번 실습은 지난 세미나 시간 동안 배운 것을 종합하며 복습한 것이므로 상세한 설명은 다음 경로에서 볼 수 있다.<br><br>
