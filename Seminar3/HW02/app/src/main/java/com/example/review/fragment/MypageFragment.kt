@@ -28,8 +28,8 @@ class MypageFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         val pref = activity!!.getSharedPreferences("USER_INFO", Context.MODE_PRIVATE)
-        tv_id.text = pref.getString("EMAIL", "id")
-        tv_pw.text = pref.getString("PASSWORD", "password")
+        tv_id.text = "ID : " + pref.getString("EMAIL", "id")
+        tv_pw.text = "PASSWORD : " + pref.getString("PASSWORD", "password")
 
         btn_signout.setOnClickListener {
             val pref = activity?.getSharedPreferences("LOGIN", Context.MODE_PRIVATE)

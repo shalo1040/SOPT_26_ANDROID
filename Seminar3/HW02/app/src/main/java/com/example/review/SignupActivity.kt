@@ -19,7 +19,7 @@ class SignupActivity : AppCompatActivity() {
             if(et_signUp_name.text.isNullOrBlank() || et_signUp_passwd.text.isNullOrBlank() || et_signUp_passwd2.text.isNullOrBlank()
                 || et_signUp_id.text.isNullOrBlank() || et_signUp_email.text.isNullOrBlank() || et_signUp_phone.text.isNullOrBlank())
                 showToast("모든 항목을 채워주세요")
-            else if(et_signUp_passwd.text != et_signUp_passwd2.text)
+            else if(et_signUp_passwd.text.toString() != et_signUp_passwd2.text.toString())
                 showToast("비밀번호가 일치하지 않습니다")
             else {
                 requestToServer.signupService.requestSignup(

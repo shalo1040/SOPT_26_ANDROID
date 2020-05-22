@@ -9,3 +9,7 @@
 * [과제1: BottomNavigationView, ViewPager, RecyclerView 실습](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW01%20%2B%20HW02#contents)
 * [과제2: itemDecoration, clipToPadding 적용하기](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW01%20%2B%20HW02#hw02)
 * [과제3: GridLayoutManager로 RecyclerView 만들기](https://github.com/shalo1040/sopt_android/tree/master/Seminar2/HW03/#HW03)
+
+### Third Seminar (20200509)
+* [과제1: Retrofit2 활용해 서버와 통신하기](https://github.com/shalo1040/sopt_android/tree/master/Seminar3/HW01#contents)
+* [과제2: 세미나1~3 내용 종합하기](https://github.com/shalo1040/sopt_android/tree/master/Seminar3/HW02/#contents)
